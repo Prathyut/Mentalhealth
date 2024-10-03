@@ -1,9 +1,48 @@
+/* App.css */
 .App {
   text-align: center;
 }
 
+
+/* Container for the signup page and image */
+.signup-container {
+  display: flex;
+  min-height: 100vh; /* Full height of the viewport */
+  background-color: #17b8c4; /* Optional, for the left side */
+}
+
+/* Left side for signup form */
+.signup-form {
+  flex: 1; /* Takes up half of the screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fff; /* Optional background for signup form */
+}
+
+/* Right side for image */
+.signup-image {
+  flex: 1; /* Takes up half of the screen */
+  background-image: url('D:\JFSD\HealthyHeads\healthyheads\src\assests\images\pic1.jpg'); /* Adjust path if necessary */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Styling the signup form */
+.signup-form form {
+  width: 80%;
+  max-width: 400px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Adjust logo and other styles */
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -15,13 +54,22 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-body {
+  background-color: paleturquoise;
+  min-height: 80vh;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(27, 26, 27);
 }
 
 .App-link {
@@ -35,4 +83,341 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Table row hover effect */
+tr:hover {
+  background-color: antiquewhite;
+}
+
+tr {
+  background-color: grey;
+}
+
+/* Input field styling */
+.input-field {
+  margin-bottom: 16px; /* Space between input fields */
+}
+
+/* Button styling */
+.signup-button {
+  margin-top: 16px; /* Space above the button */
+  background-color: #1976d2; /* Customize button color */
+  color: white;
+  padding: 10px 20px; /* Button padding */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.signup-button:hover {
+  background-color: #155a8a; /* Darker shade on hover */
+}
+
+/* Link styling */
+.signup-link {
+  color: #1976d2; /* Customize link color */
+  text-decoration: underline;
+}
+
+/* SignIn.css */
+
+/* Overall container for the Sign In page */
+.signin-container {
+  display: flex;
+  min-height: 100vh; /* Full height of the viewport */
+}
+
+/* Left side for the sign-in form */
+.signin-form {
+  flex: 1; /* Takes up half of the screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 40px; /* Padding inside the form */
+  background-color: #ffffff; /* White background for form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Right side for the image */
+.signin-image {
+  flex: 1; /* Takes up half of the screen */
+  background-image: url('D:\JFSD\HealthyHeads\healthyheads\src\assests\images\pic3.jpg'); /* Replace with your image path */
+  background-size: cover; /* Cover the entire space */
+  background-position: center; /* Center the image */
+}
+
+/* Header styling */
+.signin-header {
+  font-weight: bold; /* Bold font */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+/* Button styling */
+.signin-button {
+  margin-top: 16px; /* Space above the button */
+  background-color: #1976d2; /* Button color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Button padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.signin-button:hover {
+  background-color: #155a8a; /* Darker shade on hover */
+}
+
+/* Link styling */
+.signin-link {
+  color: #1976d2; /* Link color */
+  text-decoration: underline; /* Underline links */
+}
+
+/* Additional styles for form inputs */
+.input-field {
+  margin-bottom: 16px; /* Space between input fields */
+}
+
+/* Checkbox styling */
+.checkbox-label {
+  color: #555; /* Checkbox label color */
+}
+
+/* Copyright styling */
+.copyright {
+  margin-top: 20px; /* Space above copyright */
+}
+
+/* About Us Section */
+.about-us {
+  padding: 20px;
+  text-align: center;
+}
+
+.teammates {
+  display: flex;
+  justify-content: center; /* Centers the images */
+  flex-wrap: wrap; /* Allows wrapping of items for responsiveness */
+  gap: 20px; /* Adds space between each teammate card */
+  margin-bottom: 20px;
+}
+
+.teammate {
+  border: none; /* Remove any border */
+  padding: 10px; /* Reduced padding to fit the image nicely */
+  box-shadow: none; /* Remove shadow for a flat appearance */
+  width: 150px; /* Fixed width for vertical rectangles */
+  height: 300px; /* Fixed height for vertical rectangles */
+  overflow: hidden; /* Ensures any overflow from the image is hidden */
+  display: flex; /* Use flex to center the content */
+  flex-direction: column; /* Aligns text below the image */
+  align-items: center; /* Center content */
+  border-radius: 0; /* Set to 0 for blunt edges */
+}
+
+.teammate-image {
+  width: 100%; /* Full width */
+  height: 75%; /* Adjusted height to fill the teammate card */
+  object-fit: cover; /* Ensures the image fits inside the container */
+}
+
+.teammate h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.2rem;
+}
+
+.teammate p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+/* About Us Container */
+.about-us-container {
+  padding: 20px;
+  text-align: center;
+  background-image: url('D:\JFSD\HealthyHeads\healthyheads\src\assests\images\color.jpg'); /* Path to your background image */
+  background-size: cover; /* Ensures the background image covers the entire area */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  color: rgb(23, 22, 22); /* Change text color to white for better visibility */
+
+}
+.company-image {
+  width: 200px; /* Adjusted size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 20px; /* Optional: round the corners */
+}
+
+
+/* Home Section */
+.home-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f8ff; /* Light soothing blue background */
+  color: #333;
+}
+
+.home-container h1 {
+  font-size: 2.5rem;
+  color: #007bff; /* Calming blue for the title */
+  margin-bottom: 10px;
+}
+
+.home-container p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Card Grid Layout */
+.card-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Individual Card Styling */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 250px;
+  margin: 15px;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lift card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.card-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* Ensures images fit nicely */
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  margin: 0;
+}
+
+.card-content p {
+  color: #555;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .signup-container, .signin-container {
+    flex-direction: column; /* Stack the form and image */
+  }
+
+  .signup-image, .signin-image {
+    height: 300px; /* Set a fixed height for images */
+  }
+
+  .card {
+    width: 90%; /* Make cards full width on smaller screens */
+  }
+}
+
+/* Show.css */
+
+/* Global Styles */
+body {
+  background-color: #A8D8E8; /* Pastel Blue for the entire page */
+  color: #333; /* Dark text for better contrast */
+  font-family: 'Arial', sans-serif; /* Preferred font */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100vh; /* Full height of the viewport */
+}
+
+/* Table Container */
+.table-container {
+  padding: 20px; /* Space around the table */
+}
+
+/* Styled Table */
+.styled-table {
+  border-collapse: collapse; /* Ensures borders are merged */
+  width: 100%;
+  margin: 20px 0;
+  font-size: 1rem;
+  font-family: Arial, sans-serif; /* Ensures consistent font */
+}
+
+/* Table Header */
+.styled-table thead tr {
+  background-color: #607d8b; /* Use blueGrey[500] color */
+  color: #ffffff; /* White font color for header */
+  text-align: left;
+}
+
+/* Table Header Cells */
+.styled-table th {
+  border: 2px solid #607d8b; /* Border for header cells */
+  padding: 12px; /* Padding inside header cells */
+}
+
+/* Table Body Rows */
+.styled-table tbody tr {
+  color: #000000; /* Black font color for table rows */
+}
+
+/* Table Body Cells */
+.styled-table td {
+  border: 1px solid #607d8b; /* Border for body cells */
+  padding: 10px; /* Padding inside body cells */
+}
+
+/* Hover effect for rows */
+.styled-table tbody tr:hover {
+  background-color: #cfd8dc; /* Light grey on hover */
+}
+
+/* Alternate row styling */
+.even-row {
+  background-color: #eceff1; /* Light blue-grey for even rows */
+}
+
+.odd-row {
+  background-color: #ffffff; /* White for odd rows */
+}
+
+/* Fetching text styling */
+.fetching {
+  text-align: center;
+  color: #455a64; /* Darker shade for fetching text */
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/* Delete button styling */
+.delete-button {
+  background-color: #ff6f61; /* Coral color for the button */
+  color: white; /* White text color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.delete-button:hover {
+  background-color: #ff4c4c; /* Darker coral on hover */
 }
