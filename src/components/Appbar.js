@@ -16,7 +16,7 @@ import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import { useDispatch } from 'react-redux'; // Import useDispatch
 
 // Update the pages array to remove spaces
-const pages = ['Home', 'User', 'Show', 'AboutUs', 'SignUp', 'SignIn'];
+const pages = ['Home', 'AboutUs', 'SignUp', 'SignIn'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
