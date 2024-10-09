@@ -145,7 +145,7 @@ tr {
 /* Right side for the image */
 .signin-image {
   flex: 1; /* Takes up half of the screen */
-  background-image: url('D:\JFSD\HealthyHeads\healthyheads\src\assests\images\pic3.jpg'); /* Replace with your image path */
+  background-image: url('./assests/images/pic3.jpg'); /* Replace with your image path */
   background-size: cover; /* Cover the entire space */
   background-position: center; /* Center the image */
 }
@@ -243,7 +243,7 @@ tr {
 .about-us-container {
   padding: 20px;
   text-align: center;
-  background-image: url('D:\JFSD\HealthyHeads\healthyheads\src\assests\images\color.jpg'); /* Path to your background image */
+  background-image: url('./assests/images/color.jpg'); /* Path to your background image */
   background-size: cover; /* Ensures the background image covers the entire area */
   background-position: center; /* Centers the background image */
   background-repeat: no-repeat; /* Prevents the background image from repeating */
